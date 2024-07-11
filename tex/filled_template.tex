@@ -1,0 +1,233 @@
+\documentclass[letterpaper,11pt]{article}
+
+\usepackage{latexsym}
+\usepackage[empty]{fullpage}
+\usepackage{titlesec}
+\usepackage{marvosym}
+\usepackage[usenames,dvipsnames]{color}
+\usepackage{verbatim}
+\usepackage{enumitem}
+\usepackage[hidelinks]{hyperref}
+\usepackage{fancyhdr}
+\usepackage[english]{babel}
+\usepackage{tabularx}
+\usepackage{fontawesome5}
+\usepackage{multicol}
+\setlength{\multicolsep}{-3.0pt}
+\setlength{\columnsep}{-1pt}
+\input{glyphtounicode}
+
+
+%----------FONT OPTIONS----------
+% sans-serif
+% \usepackage[sfdefault]{FiraSans}
+% \usepackage[sfdefault]{roboto}
+% \usepackage[sfdefault]{noto-sans}
+% \usepackage[default]{sourcesanspro}
+
+% serif
+% \usepackage{CormorantGaramond}
+% \usepackage{charter}
+
+
+\pagestyle{fancy}
+\fancyhf{} % clear all header and footer fields
+\fancyfoot{}
+\renewcommand{\headrulewidth}{0pt}
+\renewcommand{\footrulewidth}{0pt}
+
+% Adjust margins
+\addtolength{\oddsidemargin}{-0.6in}
+\addtolength{\evensidemargin}{-0.5in}
+\addtolength{\textwidth}{1.19in}
+\addtolength{\topmargin}{-.7in}
+\addtolength{\textheight}{1.4in}
+
+\urlstyle{same}
+
+\raggedbottom
+\raggedright
+\setlength{\tabcolsep}{0in}
+
+% Sections formatting
+\titleformat{\section}{
+  \vspace{-4pt}\scshape\raggedright\large\bfseries
+}{}{0em}{}[\color{black}\titlerule \vspace{-5pt}]
+
+% Ensure that generate pdf is machine readable/ATS parsable
+\pdfgentounicode=1
+
+%-------------------------
+% Custom commands
+\newcommand{\resumeItem}[1]{
+  \item\small{
+    {#1 \vspace{-2pt}}
+  }
+}
+
+\newcommand{\classesList}[4]{
+    \item\small{
+        {#1 #2 #3 #4 \vspace{-2pt}}
+  }
+}
+
+\newcommand{\resumeSubheading}[4]{
+  \vspace{-2pt}\item
+    \begin{tabular*}{1.0\textwidth}[t]{l@{\extracolsep{\fill}}r}
+      \textbf{#1} & \textbf{\small #2} \\
+      \textit{\small#3} & \textit{\small #4} \\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\resumeSubSubheading}[2]{
+    \item
+    \begin{tabular*}{0.97\textwidth}{l@{\extracolsep{\fill}}r}
+      \textit{\small#1} & \textit{\small #2} \\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\resumeProjectHeading}[2]{
+    \item
+    \begin{tabular*}{1.001\textwidth}{l@{\extracolsep{\fill}}r}
+      \small#1 & \textbf{\small #2}\\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\resumeSubItem}[1]{\resumeItem{#1}\vspace{-4pt}}
+
+\renewcommand\labelitemi{$\vcenter{\hbox{\tiny$\bullet$}}$}
+\renewcommand\labelitemii{$\vcenter{\hbox{\tiny$\bullet$}}$}
+
+\newcommand{\resumeSubHeadingListStart}{\begin{itemize}[leftmargin=0.0in, label={}]}
+\newcommand{\resumeSubHeadingListEnd}{\end{itemize}}
+\newcommand{\resumeItemListStart}{\begin{itemize}}
+\newcommand{\resumeItemListEnd}{\end{itemize}\vspace{-5pt}}
+
+%-------------------------------------------
+%%%%%%  RESUME STARTS HERE  %%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+
+\begin{document}
+
+%----------HEADING----------
+% \begin{tabular*}{\textwidth}{l@{\extracolsep{\fill}}r}
+%   \textbf{\href{http://sourabhbajaj.com/}{\Large Sourabh Bajaj}} & Email : \href{mailto:sourabh@sourabhbajaj.com}{sourabh@sourabhbajaj.com}\\
+%   \href{http://sourabhbajaj.com/}{http://www.sourabhbajaj.com} & Mobile : +1-123-456-7890 \\
+% \end{tabular*}
+
+\begin{center}
+    {\Huge \scshape Maneesh Kolli} \\ \vspace{1pt}
+    New York, USA \\ \vspace{1pt}
+    \small \raisebox{-0.1\height}\faPhone\ 1234567890 ~ \href{mailto:maneesh@nyu.edu}{\raisebox{-0.2\height}\faEnvelope\  \underline{ maneesh@nyu.edu}} ~ 
+    \href{https://linkedin.com/in/maneeshkolli/}{\raisebox{-0.2\height}\faLinkedin\ \underline{linkedin.com/in/maneeshkolli}}  ~
+    \href{https://github.com/Maneeshk11}{\raisebox{-0.2\height}\faGithub\ \underline{github.com/Maneeshk11}}
+    % \href{https://maneeshkolli.com}{\raisebox{-0.2\height}\faGithub\ \underline{maneeshkolli.com}}
+    \vspace{-8pt}
+\end{center}
+
+
+%-----------EDUCATION-----------
+\section{Education}
+  \resumeSubHeadingListStart
+    \resumeSubheading
+      { New York University }{ August 2020 -- May 2022 }
+      { Master of Science - Computer Science }{ New York, USA }
+    \resumeSubheading
+      { Indian Institute of Technology }{ August 2016 -- May 2020 }
+      { Bachelor of Technology - Computer Science }{ Hyderabad, India }
+    \resumeSubheading
+      { Silver Oaks International School }{ August 2008 -- May 2018 }
+      { High School - Computer Science }{ Hyderabad, India }
+  \resumeSubHeadingListEnd
+
+%------RELEVANT COURSEWORK-------
+\section{Relevant Coursework}
+    %\resumeSubHeadingListStart
+        \begin{multicols}{4}
+            \begin{itemize}[itemsep=-5pt, parsep=3pt]
+                \item\small Algorithms
+                \item\small Database Systems
+                \item\small Operating Systems
+                \item\small Computer Networks
+                \item\small Machine Learning
+                \item\small Software Engineering
+                \item\small Web Development
+                \item\small Data Structures
+            \end{itemize}
+        \end{multicols}
+        \vspace*{2.0\multicolsep}
+    %\resumeSubHeadingListEnd
+
+%-----------PROGRAMMING SKILLS-----------
+\vspace{3pt}
+\section{Technical Skills}
+ \begin{itemize}[leftmargin=0.15in, label={}]
+    \small{
+      \item{
+        \textbf{ Programming}{: Python, Java, C++, JavaScript} \\
+        \textbf{ Frameworks}{: React, Node.js, Express.js, Flask} \\
+        \textbf{ Databases}{: MySQL, MongoDB, PostgreSQL} \\
+        \textbf{ Tools}{: Git, Docker, Kubernetes, Jenkins} \\
+    }}
+ \end{itemize}
+ \vspace{-16pt}
+
+%-----------EXPERIENCE-----------
+\section{Experience}
+  \resumeSubHeadingListStart
+    \resumeSubheading
+      { Software Engineer Intern}{ May 2022 -- Aug 2022 }
+      { Google}{ Mountain View, CA}
+      \resumeItemListStart
+          \resumeItem{ Developed a web application that allows users to search for and view the details of various movies and TV shows. }
+          \resumeItem{ Implemented a feature that allows users to view the details of the cast and crew of a movie or TV show. }
+      \resumeItemListEnd
+    \resumeSubheading
+      { Software Engineer}{ Aug 2022 -- Present }
+      { Amazon}{ Seattle, WA}
+      \resumeItemListStart
+          \resumeItem{ Developed a web application that allows users to search for and view the details of various movies and TV shows. }
+          \resumeItem{ Implemented a feature that allows users to view the details of the cast and crew of a movie or TV show }
+      \resumeItemListEnd
+  \resumeSubHeadingListEnd
+\vspace{-16pt}
+
+%-----------PROJECTS-----------
+\section{Projects}
+    \vspace{-5pt}
+    \resumeSubHeadingListStart
+      \resumeProjectHeading
+          {\textbf{ RateMUprofessors} $|$ \emph{ Next.js, Amazon S3, Golang, PostgreSQL}}{ Mar. 2023 -- May. 2023 }
+          \resumeItemListStart
+              \resumeItem{ Development of a website similar to RateMyProfessor for Indian colleges where students can provide feedbacks, reviews and ratings on instructors and courses. }
+              \resumeItem{ Built a website version of a software that assesses and simulates the structural integrity of a building during earthquakes based on the user input and details of the building. }
+          \resumeItemListEnd
+        \vspace{-13pt}
+      \resumeProjectHeading
+          {\textbf{ RateMUprofessors} $|$ \emph{ Next.js, Amazon S3, Golang, PostgreSQL}}{ Mar. 2023 -- May. 2023 }
+          \resumeItemListStart
+              \resumeItem{ Development of a website similar to RateMyProfessor for Indian colleges where students can provide feedbacks, reviews and ratings on instructors and courses. }
+              \resumeItem{ Built a website version of a software that assesses and simulates the structural integrity of a building during earthquakes based on the user input and details of the building. }
+          \resumeItemListEnd
+        \vspace{-13pt}
+    \resumeSubHeadingListEnd
+\vspace{-15pt}
+
+
+%
+
+
+%-----------INVOLVEMENT---------------
+% \section{Leadership / Extracurricular}
+%     \resumeSubHeadingListStart
+%         \resumeSubheading{Fraternity}{Spring 2020 -- Present}{President}{University Name}
+%             \resumeItemListStart
+%                 \resumeItem{Achieved a 4 star fraternity ranking by the Office of Fraternity and Sorority Affairs (highest possible ranking).}
+%                 \resumeItem{Managed executive board of 5 members and ran weekly meetings to oversee progress in essential parts of the chapter.}
+%                 \resumeItem{Led chapter of 30+ members to work towards goals that improve and promote community service, academics, and unity.}
+%             \resumeItemListEnd
+        
+%     \resumeSubHeadingListEnd
+
+
+\end{document}
